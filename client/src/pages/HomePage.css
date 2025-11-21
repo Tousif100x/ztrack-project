@@ -1,0 +1,69 @@
+/* client/src/pages/HomePage.css */
+
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7f6;
+  font-family: Arial, sans-serif;
+}
+
+.role-selector {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.role-selector h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.role-selector h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.options-container {
+  display: flex;
+  gap: 30px;
+}
+
+.option-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.option-box span {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.student-box {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.faculty-box {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.option-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}

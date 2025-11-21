@@ -1,0 +1,112 @@
+/* client/src/pages/FacultySubmissionsPage.css */
+
+.submissions-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.submissions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.submissions-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.submissions-header a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.submission-error-page {
+  color: red;
+  font-weight: 600;
+}
+
+.submissions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.submission-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.submission-card h4 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.submission-card p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.submission-card span.submitted {
+  color: #ffc107;
+  font-weight: 600;
+}
+.submission-card span.graded {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.submission-download-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.submission-download-link:hover {
+  background-color: #0056b3;
+}
+
+.grading-form {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.grading-form select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.grading-form button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+}
+.grading-form button:hover {
+  background-color: #1e7e34;
+}

@@ -1,0 +1,264 @@
+/* client/src/pages/CoursePlayerPage.css */
+
+.player-container {
+  display: flex;
+  padding-top: 70px; /* Offset for fixed navbar */
+  height: 100vh;
+  box-sizing: border-box;
+  background: #f4f7f6;
+}
+
+.player-sidebar {
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 70px);
+}
+
+.player-sidebar h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.player-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.player-sidebar li {
+  padding: 15px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.player-sidebar li:hover {
+  background-color: #f0f0f0;
+}
+
+.player-sidebar li.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.player-main {
+  flex: 1; /* Take remaining space */
+  padding: 30px;
+  overflow-y: auto;
+  height: calc(100vh - 70px);
+}
+
+.player-main h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.player-video-wrapper {
+  width: 100%;
+  max-width: 900px;
+}
+
+.player-video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-document-wrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 800px; /* Set a fixed height for PDF */
+}
+
+.player-document {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* --- Progress Bar & Module Actions --- */
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #28a745;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.player-sidebar li.completed {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.module-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.complete-button, .certificate-button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.complete-button:hover {
+  background-color: #0056b3;
+}
+
+.complete-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.certificate-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.certificate-button:hover {
+  background-color: #1e7e34;
+}
+
+/* --- Assignment & Submission Styles --- */
+.assignment-wrapper {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.assignment-wrapper h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.assignment-wrapper p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.assignment-download-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 10px 0 20px 0;
+}
+.assignment-download-link:hover {
+  background-color: #0056b3;
+}
+
+.submission-form {
+  margin-top: 20px;
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+}
+
+.submission-form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.submission-form input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.submission-button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+}
+.submission-button:hover {
+  background-color: #1e7e34;
+}
+.submission-button:disabled {
+  background-color: #aaa;
+}
+
+.submission-error {
+  color: red;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.submission-success {
+  color: green;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* --- Submission Status Box --- */
+.submission-status-box {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+.submission-status-box h4 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+.submission-status-box p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.submission-status-box span.submitted {
+  color: #ffc107;
+  font-weight: 600;
+}
+.submission-status-box span.graded {
+  color: #28a745;
+  font-weight: 600;
+}
+.submission-status-box a {
+  font-weight: 600;
+  color: #007bff;
+}

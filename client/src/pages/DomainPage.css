@@ -1,0 +1,129 @@
+/* client/src/pages/DomainPage.css */
+
+.domain-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.domain-header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.domain-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.domain-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.domain-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1/3 for roadmap, 2/3 for courses */
+  gap: 30px;
+}
+
+.roadmap-section,
+.courses-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.roadmap-section h2,
+.courses-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.roadmap-text {
+  font-family: Arial, sans-serif; /* Keep consistent font */
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  white-space: pre-wrap; /* This lets the text wrap */
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-card-domain {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.course-card-domain:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.course-card-domain h3 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.course-card-domain p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.course-card-domain span {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+.domain-error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border: 1px solid #D8000C;
+  padding: 10px;
+  border-radius: 6px;
+}
+/* Add this to the bottom of DomainPage.css */
+
+.course-card-domain-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.enroll-button {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.course-card-domain:hover .enroll-button {
+  text-decoration: underline;
+}
+/* Add this to the bottom of DomainPage.css */
+
+.course-card-domain-link {
+  cursor: pointer;
+}

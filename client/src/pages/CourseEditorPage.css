@@ -1,0 +1,163 @@
+/* client/src/pages/CourseEditorPage.css */
+
+.editor-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.editor-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.editor-header a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.editor-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.editor-form-section,
+.editor-list-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.editor-form-section h2,
+.editor-list-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.form-group input[type="file"] {
+  padding: 10px;
+}
+
+.editor-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editor-button:hover {
+  background-color: #1e7e34;
+}
+
+.editor-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.editor-error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border: 1px solid #D8000C;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.module-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.module-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.module-item span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.module-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.module-item a:hover {
+  background: #007bff;
+  color: white;
+}
+/* ... (at the bottom of the file) ... */
+.module-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-button-module {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.delete-button-module:hover {
+  background: #c82333;
+}

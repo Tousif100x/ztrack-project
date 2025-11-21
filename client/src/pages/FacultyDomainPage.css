@@ -1,0 +1,158 @@
+/* client/src/pages/FacultyDomainPage.css */
+
+.faculty-domain-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.form-section,
+.list-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2,
+.list-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.course-form .form-group {
+  margin-bottom: 20px;
+}
+
+.course-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.course-form input,
+.course-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.course-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.faculty-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faculty-button:hover {
+  background-color: #1e7e34;
+}
+
+.faculty-error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border: 1px solid #D8000C;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-list-faculty {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-card-faculty {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.course-card-faculty h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course-card-faculty p {
+  color: #666;
+  font-size: 1rem;
+}
+/* Add this to the bottom of FacultyDomainPage.css */
+
+.course-card-faculty-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card-faculty span {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: 600;
+}
+/* ... (at the bottom of the file) ... */
+
+.course-card-faculty-wrapper {
+  position: relative; /* For positioning the delete button */
+  margin-bottom: 10px;
+}
+
+.course-card-faculty-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card-faculty span {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.delete-button-course {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.delete-button-course:hover {
+  background: #c82333;
+}
