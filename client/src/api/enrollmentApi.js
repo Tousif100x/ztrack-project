@@ -2,7 +2,7 @@
 import axios from 'axios';
 import authApi from './authApi';
 
-const API_URL = '/api/enrollments';
+const API_URL = 'https://ztrack-project.onrender.com/api/enrollments';
 
 // Enroll in a course (Private)
 const enrollInCourse = (courseId) => {

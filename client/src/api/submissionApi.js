@@ -2,7 +2,7 @@
 import axios from 'axios';
 import authApi from './authApi';
 
-const API_URL = '/api/submissions';
+const API_URL = 'https://ztrack-project.onrender.com/api/submissions';
 
 // --- STUDENT ---
 const submitAssignment = (moduleId, formData) => {

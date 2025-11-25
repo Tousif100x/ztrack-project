@@ -1,7 +1,7 @@
 // client/src/api/authApi.js
 
 import axios from 'axios';
-const API_URL = '/api/auth';
+const API_URL = 'https://ztrack-project.onrender.com/api/auth';
 
 // --- Token Service ---
 // Save token to localStorage

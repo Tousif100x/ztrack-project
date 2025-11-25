@@ -2,7 +2,7 @@
 import axios from 'axios';
 import authApi from './authApi';
 
-const API_URL = '/api/certificates';
+const API_URL = 'https://ztrack-project.onrender.com/api/certificates';
 
 // Generate a certificate (Private)
 const generateCertificate = (courseId) => {

@@ -2,7 +2,7 @@
 import axios from 'axios';
 import authApi from './authApi';
 
-const API_URL = '/api/courses';
+const API_URL = 'https://ztrack-project.onrender.com/api/courses';
 
 const getCoursesByDomain = (domainId) => {
   // ... (rest of function)

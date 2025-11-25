@@ -1,7 +1,7 @@
 // client/src/api/domainApi.js
 import axios from 'axios';
 
-const API_URL = '/api/domains';
+const API_URL = 'https://ztrack-project.onrender.com/api/domains';
 
 // Get a single domain by its ID
 const getDomain = (domainId) => {
