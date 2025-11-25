@@ -21,7 +21,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 // 2. Connect to MongoDB
-const dbURI = 'mongodb://localhost:27017/ztrack';
+const dbURI = process.env.MONGO_URI || 'mongodb://localhost:27017/ztrack';
+
 mongoose.connect(dbURI)
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
