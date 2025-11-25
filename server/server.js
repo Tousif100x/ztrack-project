@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
-
+const cors = require('cors');
 // --- Import Routes ---
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
@@ -19,7 +19,7 @@ const app = express();
 // --- NEW: Add Middleware ---
 // This teaches our server to understand JSON from request bodies
 app.use(express.json());
-
+app.use(cors());
 // 2. Connect to MongoDB
 const dbURI = 'mongodb://localhost:27017/ztrack';
 mongoose.connect(dbURI)
